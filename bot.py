@@ -7,7 +7,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import CommandStart
 
-API_TOKEN = "API_TOKEN"
+import os
+API_TOKEN = os.getenv("API_TOKEN")
 CHANNEL_ID_1 = -10019145952198
 CHANNEL_ID_2 = -1001703186768
 ADMIN_ID = 1388312519
